@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Source"
   ],
-  "SelectedNode": "\\C:\\Users\\admin\\Documents\\IT\\JUCE\\SimpleEQ",
+  "SelectedNode": "\\Source\\PluginEditor.h",
   "PreviewInSolutionExplorer": false
 }
