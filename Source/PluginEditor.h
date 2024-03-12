@@ -169,11 +169,16 @@ private:
 struct LookAndFeel : juce::LookAndFeel_V4
 {
     void drawRotarySlider(juce::Graphics&,
-        int x, int y, int width, int height,
-        float sliderPosProportional,
-        float rotaryStartAngle,
-        float rotaryEndAngle,
-        juce::Slider&) override;
+                        int x, int y, int width, int height,
+                        float sliderPosProportional,
+                        float rotaryStartAngle,
+                        float rotaryEndAngle,
+                        juce::Slider&) override;
+
+    void drawToggleButton(juce::Graphics &g, 
+                        juce::ToggleButton & toggleBurron, 
+                        bool shouldDrawButtonAsHighlighted,
+                        bool shouldDrawButtonAsDown) override;
 
 };
 
@@ -318,6 +323,8 @@ private:
                      analyzerEnabledButtonAttachment;
 
     std::vector<juce::Component*> getComps();
+
+    LookAndFeel lnf;
 
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleEQAudioProcessorEditor)
